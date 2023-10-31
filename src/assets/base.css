@@ -1,0 +1,90 @@
+:root {
+  --sl-black: #000;
+  --sl-white: #fff;
+  --sl-white-gradient: rgba(255, 255, 255, 0.42);
+  --sl-gray-soft: #c4c4c422;
+  --sl-gray-intense: rgb(73, 73, 73);
+  --sl-red-gradient: rgba(255, 45, 45, 0.42);
+  --sl-red-intense: rgba(255, 45, 45, 1);
+  --sl-blue-gradient: rgba(73, 150, 241, 0.42);
+  --sl-green-intense: rgb(44, 215, 57);
+}
+
+:root {
+  --background-base: var(--sl-black);
+  --text-color: var(--sl-white);
+  --input-background-color: var(--sl-gray-soft);
+  --input-border-color: var(--sl-gray-intense);
+  --input-border-link-color: var(--sl-white);
+  --input-border-color-error: var(--sl-red-gradient);
+  --input-text-color: var(--sl-white);
+  --input-box-shadow-primary: var(--sl-white-gradient);
+  --input-box-shadow-secondary: var(--sl-red-gradient);
+  --input-box-shadow-tertiary: var(--sl-blue-gradient);
+  --button-border-disabled: var(--sl-gray-soft);
+  --marker-background-color: var(--sl-white);
+  --marker-text-color: var(--sl-black);
+  --url-copy-success-color: var(--sl-green-intense);
+  --link-go-back: var(--sl-white);
+}
+
+:root {
+  --input-height: 78px;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --home-body-width: 100%;
+    --home-body-padding: 0 1rem;
+    --copy-body-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --home-body-width: 80%;
+    --home-body-padding: 0;
+    --copy-body-width: 70ch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --home-body-width: 60%;
+    --home-body-padding: 0;
+    --copy-body-width: 80ch;
+
+
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-base);
+  color: var(--text-color);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
